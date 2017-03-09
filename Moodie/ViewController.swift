@@ -9,6 +9,10 @@
 import UIKit
 import Alamofire
 
+//PISHI NETOOOOOO
+
+//Holiiiiiiii
+
 class ViewController: UIViewController {
     
     var preguntaActual = 0
