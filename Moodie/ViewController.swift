@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         siguientePregunta()
         
     }
+    // caca azul!! 
     
     @IBAction func doTapOpcion2(_ sender: AnyObject) {
         
