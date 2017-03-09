@@ -114,6 +114,15 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79f-Xz-fF2">
                                                 <rect key="frame" x="0.0" y="0.0" width="127" height="49"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFq-up-aDn">
+                                                        <rect key="frame" x="8" y="14" width="111" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnQ-5b-SbY">
@@ -212,14 +221,25 @@
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARv-fC-Bcf">
-                                                <rect key="frame" x="192" y="4" width="191" height="69"/>
+                                                <rect key="frame" x="192" y="4" width="191" height="63"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-yS-PVE">
+                                                        <rect key="frame" x="8" y="8" width="175" height="41"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.30233701470000002" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="doTapOnNext:" destination="7s7-Hz-oGd" eventType="touchUpInside" id="E37-Bi-VSa"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="fOf-OR-Hwm" secondAttribute="bottom" constant="-6" id="23f-9A-G7V"/>
-                                            <constraint firstAttribute="bottom" secondItem="ARv-fC-Bcf" secondAttribute="bottom" constant="-6" id="3en-ub-r0J"/>
+                                            <constraint firstAttribute="bottom" secondItem="ARv-fC-Bcf" secondAttribute="bottom" id="3en-ub-r0J"/>
                                             <constraint firstItem="ARv-fC-Bcf" firstAttribute="width" secondItem="FY8-3R-AMg" secondAttribute="width" multiplier="0.498" id="AQk-ad-wub"/>
                                             <constraint firstItem="ARv-fC-Bcf" firstAttribute="top" secondItem="FY8-3R-AMg" secondAttribute="top" constant="4" id="H7V-e9-xrD"/>
                                             <constraint firstItem="fOf-OR-Hwm" firstAttribute="width" secondItem="FY8-3R-AMg" secondAttribute="width" multiplier="0.498" id="Skz-5z-dtC"/>
@@ -269,6 +289,7 @@
                     <connections>
                         <outlet property="ImgFondo" destination="KrF-qD-pOQ" id="nEe-X8-sJe"/>
                         <outlet property="lblDescripcion" destination="fY2-O5-HFF" id="reU-HM-trA"/>
+                        <outlet property="lblGenero" destination="eFq-up-aDn" id="roK-ex-Lbr"/>
                         <outlet property="lblTitulo" destination="dSW-Rl-BWu" id="kcB-g4-wt2"/>
                     </connections>
                 </viewController>
