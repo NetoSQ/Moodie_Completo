@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3C2A5E1E693E1400A9747A /* ViewRecomendacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3C2A5D1E693E1200A9747A /* ViewRecomendacion.swift */; };
+		85426CF21E57796E0070B4F7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85426CE51E5778CA0070B4F7 /* Alamofire.framework */; };
+		85426CF31E57796E0070B4F7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85426CE51E5778CA0070B4F7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85DEDEC71E3BC39500AF8D6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEDEC61E3BC39500AF8D6F /* AppDelegate.swift */; };
 		85DEDEC91E3BC39500AF8D6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEDEC81E3BC39500AF8D6F /* ViewController.swift */; };
 		85DEDECC1E3BC39500AF8D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85DEDECA1E3BC39500AF8D6F /* Main.storyboard */; };
@@ -14,9 +17,66 @@
 		85DEDED11E3BC39500AF8D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85DEDECF1E3BC39500AF8D6F /* LaunchScreen.storyboard */; };
 		85DEDEDC1E3BC39500AF8D6F /* MoodieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEDEDB1E3BC39500AF8D6F /* MoodieTests.swift */; };
 		85DEDEE71E3BC39500AF8D6F /* MoodieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEDEE61E3BC39500AF8D6F /* MoodieUITests.swift */; };
+		85DEDEF61E3BC84900AF8D6F /* Opcion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEDEF51E3BC84900AF8D6F /* Opcion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		85426CE41E5778CA0070B4F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85426CD91E5778CA0070B4F7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		85426CE61E5778CA0070B4F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85426CD91E5778CA0070B4F7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		85426CE81E5778CA0070B4F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85426CD91E5778CA0070B4F7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		85426CEA1E5778CA0070B4F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85426CD91E5778CA0070B4F7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		85426CEC1E5778CA0070B4F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85426CD91E5778CA0070B4F7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		85426CEE1E5778CA0070B4F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85426CD91E5778CA0070B4F7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		85426CF01E5778CA0070B4F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85426CD91E5778CA0070B4F7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		85426CF41E57796E0070B4F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85426CD91E5778CA0070B4F7 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 		85DEDED81E3BC39500AF8D6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 85DEDEBB1E3BC39500AF8D6F /* Project object */;
@@ -33,7 +93,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		855CE6001E450D4D000A6F74 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				85426CF31E57796E0070B4F7 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1D3C2A5D1E693E1200A9747A /* ViewRecomendacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewRecomendacion.swift; path = ../ViewRecomendacion.swift; sourceTree = "<group>"; };
+		85426CD91E5778CA0070B4F7 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		85DEDEC31E3BC39500AF8D6F /* Moodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DEDEC61E3BC39500AF8D6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85DEDEC81E3BC39500AF8D6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +123,7 @@
 		85DEDEE21E3BC39500AF8D6F /* MoodieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DEDEE61E3BC39500AF8D6F /* MoodieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodieUITests.swift; sourceTree = "<group>"; };
 		85DEDEE81E3BC39500AF8D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85DEDEF51E3BC84900AF8D6F /* Opcion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Opcion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85426CF21E57796E0070B4F7 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +152,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85426CDA1E5778CA0070B4F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85426CE51E5778CA0070B4F7 /* Alamofire.framework */,
+				85426CE71E5778CA0070B4F7 /* Alamofire iOS Tests.xctest */,
+				85426CE91E5778CA0070B4F7 /* Alamofire.framework */,
+				85426CEB1E5778CA0070B4F7 /* Alamofire macOS Tests.xctest */,
+				85426CED1E5778CA0070B4F7 /* Alamofire.framework */,
+				85426CEF1E5778CA0070B4F7 /* Alamofire tvOS Tests.xctest */,
+				85426CF11E5778CA0070B4F7 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		85DEDEBA1E3BC39500AF8D6F = {
 			isa = PBXGroup;
 			children = (
+				85DEDEF81E3BC88B00AF8D6F /* Models */,
 				85DEDEC51E3BC39500AF8D6F /* Moodie */,
 				85DEDEDA1E3BC39500AF8D6F /* MoodieTests */,
 				85DEDEE51E3BC39500AF8D6F /* MoodieUITests */,
 				85DEDEC41E3BC39500AF8D6F /* Products */,
+				85426CD91E5778CA0070B4F7 /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,10 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				85DEDEC61E3BC39500AF8D6F /* AppDelegate.swift */,
-				85DEDEC81E3BC39500AF8D6F /* ViewController.swift */,
-				85DEDECA1E3BC39500AF8D6F /* Main.storyboard */,
+				85DEDEF71E3BC85200AF8D6F /* ViewControllers */,
+				85DEDEF41E3BC82100AF8D6F /* Storyboards */,
 				85DEDECD1E3BC39500AF8D6F /* Assets.xcassets */,
-				85DEDECF1E3BC39500AF8D6F /* LaunchScreen.storyboard */,
 				85DEDED21E3BC39500AF8D6F /* Info.plist */,
 			);
 			path = Moodie;
@@ -125,6 +218,32 @@
 			path = MoodieUITests;
 			sourceTree = "<group>";
 		};
+		85DEDEF41E3BC82100AF8D6F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				85DEDECF1E3BC39500AF8D6F /* LaunchScreen.storyboard */,
+				85DEDECA1E3BC39500AF8D6F /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		85DEDEF71E3BC85200AF8D6F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				85DEDEC81E3BC39500AF8D6F /* ViewController.swift */,
+				1D3C2A5D1E693E1200A9747A /* ViewRecomendacion.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		85DEDEF81E3BC88B00AF8D6F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85DEDEF51E3BC84900AF8D6F /* Opcion.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +254,12 @@
 				85DEDEBF1E3BC39500AF8D6F /* Sources */,
 				85DEDEC01E3BC39500AF8D6F /* Frameworks */,
 				85DEDEC11E3BC39500AF8D6F /* Resources */,
+				855CE6001E450D4D000A6F74 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				85426CF51E57796E0070B4F7 /* PBXTargetDependency */,
 			);
 			name = Moodie;
 			productName = Moodie;
@@ -193,13 +314,16 @@
 				TargetAttributes = {
 					85DEDEC21E3BC39500AF8D6F = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 					85DEDED61E3BC39500AF8D6F = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 85DEDEC21E3BC39500AF8D6F;
 					};
 					85DEDEE11E3BC39500AF8D6F = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 85DEDEC21E3BC39500AF8D6F;
 					};
 				};
@@ -215,6 +339,12 @@
 			mainGroup = 85DEDEBA1E3BC39500AF8D6F;
 			productRefGroup = 85DEDEC41E3BC39500AF8D6F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 85426CDA1E5778CA0070B4F7 /* Products */;
+					ProjectRef = 85426CD91E5778CA0070B4F7 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				85DEDEC21E3BC39500AF8D6F /* Moodie */,
@@ -223,6 +353,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		85426CE51E5778CA0070B4F7 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 85426CE41E5778CA0070B4F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85426CE71E5778CA0070B4F7 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 85426CE61E5778CA0070B4F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85426CE91E5778CA0070B4F7 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 85426CE81E5778CA0070B4F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85426CEB1E5778CA0070B4F7 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 85426CEA1E5778CA0070B4F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85426CED1E5778CA0070B4F7 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 85426CEC1E5778CA0070B4F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85426CEF1E5778CA0070B4F7 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 85426CEE1E5778CA0070B4F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85426CF11E5778CA0070B4F7 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 85426CF01E5778CA0070B4F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		85DEDEC11E3BC39500AF8D6F /* Resources */ = {
@@ -256,6 +438,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3C2A5E1E693E1400A9747A /* ViewRecomendacion.swift in Sources */,
+				85DEDEF61E3BC84900AF8D6F /* Opcion.swift in Sources */,
 				85DEDEC91E3BC39500AF8D6F /* ViewController.swift in Sources */,
 				85DEDEC71E3BC39500AF8D6F /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +464,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		85426CF51E57796E0070B4F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 85426CF41E57796E0070B4F7 /* PBXContainerItemProxy */;
+		};
 		85DEDED91E3BC39500AF8D6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 85DEDEC21E3BC39500AF8D6F /* Moodie */;
@@ -400,22 +589,30 @@
 		85DEDEEC1E3BC39500AF8D6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Moodie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DreamTeam.Moodie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		85DEDEED1E3BC39500AF8D6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Moodie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DreamTeam.Moodie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -427,6 +624,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DreamTeam.MoodieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moodie.app/Moodie";
 			};
 			name = Debug;
@@ -439,6 +637,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DreamTeam.MoodieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moodie.app/Moodie";
 			};
 			name = Release;
@@ -450,6 +649,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DreamTeam.MoodieUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Moodie;
 			};
 			name = Debug;
@@ -461,6 +661,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DreamTeam.MoodieUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Moodie;
 			};
 			name = Release;
@@ -484,6 +685,7 @@
 				85DEDEED1E3BC39500AF8D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85DEDEEE1E3BC39500AF8D6F /* Build configuration list for PBXNativeTarget "MoodieTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +694,7 @@
 				85DEDEF01E3BC39500AF8D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85DEDEF11E3BC39500AF8D6F /* Build configuration list for PBXNativeTarget "MoodieUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +703,7 @@
 				85DEDEF31E3BC39500AF8D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
