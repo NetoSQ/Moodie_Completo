@@ -17,9 +17,9 @@ class ViewRecomendacion: UIViewController {
     @IBOutlet weak var ImgFondo: UIImageView!
     @IBOutlet weak var lblTitulo: UILabel!
     @IBOutlet weak var lblDescripcion: UILabel!
+    @IBOutlet weak var lblAno: UILabel!
     
     
-    @IBOutlet weak var lblGenero: UILabel!
 
     
     @IBAction func doTapOnNext(_ sender: Any) {
@@ -79,7 +79,8 @@ class ViewRecomendacion: UIViewController {
                                 self.lblDescripcion.text = reseña
                             }
                             
-                                self.lblGenero.text = self.NombreGenero
+                            self.lblAno.text = self.NombreGenero
+                            
                             
                             break
                         }

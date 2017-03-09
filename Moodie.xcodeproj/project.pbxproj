@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1D3C2A5E1E693E1400A9747A /* ViewRecomendacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3C2A5D1E693E1200A9747A /* ViewRecomendacion.swift */; };
+		1D6329481E710ABC006FF446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6329471E710ABC006FF446 /* Main.storyboard */; };
 		85426CF21E57796E0070B4F7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85426CE51E5778CA0070B4F7 /* Alamofire.framework */; };
 		85426CF31E57796E0070B4F7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85426CE51E5778CA0070B4F7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85DEDEC71E3BC39500AF8D6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEDEC61E3BC39500AF8D6F /* AppDelegate.swift */; };
 		85DEDEC91E3BC39500AF8D6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEDEC81E3BC39500AF8D6F /* ViewController.swift */; };
-		85DEDECC1E3BC39500AF8D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85DEDECA1E3BC39500AF8D6F /* Main.storyboard */; };
 		85DEDECE1E3BC39500AF8D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85DEDECD1E3BC39500AF8D6F /* Assets.xcassets */; };
 		85DEDED11E3BC39500AF8D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85DEDECF1E3BC39500AF8D6F /* LaunchScreen.storyboard */; };
 		85DEDEDC1E3BC39500AF8D6F /* MoodieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEDEDB1E3BC39500AF8D6F /* MoodieTests.swift */; };
@@ -110,11 +110,11 @@
 
 /* Begin PBXFileReference section */
 		1D3C2A5D1E693E1200A9747A /* ViewRecomendacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewRecomendacion.swift; path = ../ViewRecomendacion.swift; sourceTree = "<group>"; };
+		1D6329471E710ABC006FF446 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		85426CD91E5778CA0070B4F7 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		85DEDEC31E3BC39500AF8D6F /* Moodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DEDEC61E3BC39500AF8D6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85DEDEC81E3BC39500AF8D6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		85DEDECB1E3BC39500AF8D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85DEDECD1E3BC39500AF8D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85DEDED01E3BC39500AF8D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85DEDED21E3BC39500AF8D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -225,7 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				85DEDECF1E3BC39500AF8D6F /* LaunchScreen.storyboard */,
-				85DEDECA1E3BC39500AF8D6F /* Main.storyboard */,
+				1D6329471E710ABC006FF446 /* Main.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -417,8 +417,8 @@
 			files = (
 				85DEDED11E3BC39500AF8D6F /* LaunchScreen.storyboard in Resources */,
 				85DEDECE1E3BC39500AF8D6F /* Assets.xcassets in Resources */,
-				85DEDECC1E3BC39500AF8D6F /* Main.storyboard in Resources */,
 				98C8A1F21E70FD0C00D3CC0B /* Alcubierre.otf in Resources */,
+				1D6329481E710ABC006FF446 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,14 +487,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		85DEDECA1E3BC39500AF8D6F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85DEDECB1E3BC39500AF8D6F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		85DEDECF1E3BC39500AF8D6F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
