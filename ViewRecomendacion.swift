@@ -18,6 +18,8 @@ class ViewRecomendacion: UIViewController {
     @IBOutlet weak var lblTitulo: UILabel!
     @IBOutlet weak var lblDescripcion: UILabel!
     @IBOutlet weak var lblAno: UILabel!
+    @IBOutlet weak var lblCalificacion: UILabel!
+    @IBOutlet weak var lblDuracion: UILabel!
     
     
 
@@ -75,11 +77,22 @@ class ViewRecomendacion: UIViewController {
                                 self.lblTitulo.text = tituloPelicula
                             }
                             
-                            if let reseña = diccionarioPeliculas.value(forKey: "synopsis") as? String {
-                                self.lblDescripcion.text = reseña
+                            if let resena = diccionarioPeliculas.value(forKey: "synopsis") as? String {
+                                self.lblDescripcion.text = resena
                             }
                             
-                            self.lblAno.text = self.NombreGenero
+                            if let year = diccionarioPeliculas.value(forKey: "year") as? String {
+                                self.lblAno.text = year
+                            }
+                            
+                            if let cali = diccionarioPeliculas.value(forKey: "rating") as? String {
+                                self.lblCalificacion.text = cali
+                            }
+                            
+                            if let tiempo = diccionarioPeliculas.value(forKey: "runtime") as? String {
+                                self.lblDuracion.text = "\(tiempo) min"
+                            }
+                            
                             
                             
                             break
