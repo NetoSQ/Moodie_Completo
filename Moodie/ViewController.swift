@@ -41,8 +41,7 @@ class ViewController: UIViewController {
         siguientePregunta()
         
     }
-    // caca azul!! 
-    
+
     @IBAction func doTapOpcion2(_ sender: AnyObject) {
         
         puntosDrama += opciones[(preguntaActual*2)+1].puntosDrama
