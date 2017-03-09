@@ -9,9 +9,6 @@
 import UIKit
 import Alamofire
 
-//PISHI NETOOOOOO
-
-//Holiiiiiiii
 
 class ViewController: UIViewController {
     
