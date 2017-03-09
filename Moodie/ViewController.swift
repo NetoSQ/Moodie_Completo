@@ -23,6 +23,9 @@ class ViewController: UIViewController {
     var puntosMusical = 0
     var puntosMisterio = 0
     
+    var mayor = 0
+    var idGenero = 0
+    
     var opcionesCargadas = 0
     
     @IBOutlet weak var imgOpcion1: UIImageView!
@@ -108,11 +111,46 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "goToSugerencia" {
+        mayor = puntosRomance
+        idGenero = 21
+        var nGenero = "Romance"
+        if puntosDrama > mayor {
+            mayor = puntosDrama
+            idGenero = 9
+            nGenero = "Drama"
+        }else{if puntosComedia > mayor {
+                mayor = puntosComedia
+                idGenero = 6
+                nGenero = "Comedia"
+            }else{ if puntosTerror > mayor {
+                    mayor = puntosTerror
+                    idGenero = 15
+                    nGenero = "Terror"
+                }else{ if puntosAccion > mayor {
+                        mayor = puntosAccion
+                        idGenero = 1
+                        nGenero = "Accion"
+                    } else{ if puntosMusical > mayor {
+                            mayor = puntosMusical
+                            idGenero = 16
+                            nGenero = "Musical"
+                        }else{ if puntosMisterio > mayor {
+                                mayor = puntosMisterio
+                                idGenero = 18
+                                nGenero = "Misterio"
+                            }
+                        }
+                    }
+                }
+            }
+        }
         
-        var viewControllerDestino =  segue.destination as! ViewRecomendacion
-            //viewControllerDestino.generoGanador =
-            
+      if segue.identifier == "goToSugerencia" {
+        
+        let viewControllerDestino =  segue.destination as! ViewRecomendacion
+        viewControllerDestino.genero = idGenero
+        viewControllerDestino.NombreGenero = nGenero
+
         }
     }
     
