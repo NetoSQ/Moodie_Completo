@@ -11,31 +11,39 @@ import Alamofire
 
 class ViewRecomendacion: UIViewController {
     
+    var genero = 0
+    var NombreGenero = ""
+    
     @IBOutlet weak var ImgFondo: UIImageView!
     @IBOutlet weak var lblTitulo: UILabel!
     @IBOutlet weak var lblDescripcion: UILabel!
     
     
-    var generoGanador = [1, 6, 7, 9, 15, 17, 21]
-    var n = 0
+    @IBOutlet weak var lblGenero: UILabel!
+
     
+    @IBAction func doTapOnNext(_ sender: Any) {
+        obtenerOpciones(genero)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        obtenerOpciones() // se manda a llamar obtener opciones
+        
+        obtenerOpciones(genero) // se manda a llamar obtener opciones
         
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        obtenerOpciones(genero)
     }
 
     
-    func obtenerOpciones(){
-        print("Obtener opciones..!")
-        Alamofire.request("http://www.omive.com/search", method: .post, parameters: ["genres[]" : 9, "start" : 4, "showtype" : 0])
+    func obtenerOpciones(_ genero: Int){
+        let rndm = Int(arc4random_uniform(10) + 1)
+        Alamofire.request("http://www.omive.com/search", method: .post, parameters: ["genres[]" : genero, "start" : rndm, "showtype" : 0])
         //Alamofire.request("http://www.omive.com/search", method: .post, parameters: ["genres[]" : 9, "start" : 0, "showtype" : 0])
             .responseJSON {
                 response in
@@ -70,6 +78,9 @@ class ViewRecomendacion: UIViewController {
                             if let reseña = diccionarioPeliculas.value(forKey: "synopsis") as? String {
                                 self.lblDescripcion.text = reseña
                             }
+                            
+                                self.lblGenero.text = self.NombreGenero
+                            
                             break
                         }
                     }
