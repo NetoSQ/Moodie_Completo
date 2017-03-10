@@ -134,7 +134,7 @@ class ViewController: UIViewController {
                             mayor = puntosMusical
                             idGenero = 16
                             nGenero = "Musical"
-                        }else{ if puntosMisterio > mayor {
+                        }else{ if puntosMisterio >= mayor {
                                 mayor = puntosMisterio
                                 idGenero = 18
                                 nGenero = "Misterio"

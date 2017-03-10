@@ -21,12 +21,18 @@ class ViewRecomendacion: UIViewController {
     @IBOutlet weak var lblCalificacion: UILabel!
     @IBOutlet weak var lblDuracion: UILabel!
     
-    
-
-    
     @IBAction func doTapOnNext(_ sender: Any) {
         obtenerOpciones(genero)
     }
+    @IBAction func doTapOnWatch(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "goToWatch", sender: self)
+    }
+   
+    @IBOutlet weak var lblGenero: UILabel!
+    
+
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +50,7 @@ class ViewRecomendacion: UIViewController {
 
     
     func obtenerOpciones(_ genero: Int){
-        let rndm = Int(arc4random_uniform(10) + 1)
+        let rndm = Int(arc4random_uniform(30))
         Alamofire.request("http://www.omive.com/search", method: .post, parameters: ["genres[]" : genero, "start" : rndm, "showtype" : 0])
         //Alamofire.request("http://www.omive.com/search", method: .post, parameters: ["genres[]" : 9, "start" : 0, "showtype" : 0])
             .responseJSON {
@@ -94,6 +100,7 @@ class ViewRecomendacion: UIViewController {
                                 self.lblDuracion.text = "\(tiempo) min"
                             }
                             
+                            self.lblGenero.text = self.NombreGenero
                             
                             
                             break

@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1D750C851E7282390083B844 /* MoodieApp2@x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D750C841E7282390083B844 /* MoodieApp2@x3.png */; };
+		1D750C871E7286050083B844 /* MoodieApp2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D750C861E7286050083B844 /* MoodieApp2@3x.png */; };
 		31ED52E81D73891B00199085 /* AFError+AlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED52E61D73889D00199085 /* AFError+AlamofireTests.swift */; };
 		31ED52E91D73891C00199085 /* AFError+AlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED52E61D73889D00199085 /* AFError+AlamofireTests.swift */; };
 		31ED52EA1D73891C00199085 /* AFError+AlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED52E61D73889D00199085 /* AFError+AlamofireTests.swift */; };
@@ -288,6 +290,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D750C841E7282390083B844 /* MoodieApp2@x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoodieApp2@x3.png"; sourceTree = "<group>"; };
+		1D750C861E7286050083B844 /* MoodieApp2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoodieApp2@3x.png"; sourceTree = "<group>"; };
 		31ED52E61D73889D00199085 /* AFError+AlamofireTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AFError+AlamofireTests.swift"; sourceTree = "<group>"; };
 		4C0B58381B747A4400C0B99C /* ResponseSerializationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerializationTests.swift; sourceTree = "<group>"; };
 		4C0B62501BB1001C009302D3 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -667,6 +671,8 @@
 		F8111E2919A95C8B0040E7D1 = {
 			isa = PBXGroup;
 			children = (
+				1D750C861E7286050083B844 /* MoodieApp2@3x.png */,
+				1D750C841E7282390083B844 /* MoodieApp2@x3.png */,
 				F8111E3519A95C8B0040E7D1 /* Source */,
 				F8111E3F19A95C8B0040E7D1 /* Tests */,
 				F8111E3419A95C8B0040E7D1 /* Products */,
@@ -1032,6 +1038,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D750C851E7282390083B844 /* MoodieApp2@x3.png in Resources */,
+				1D750C871E7286050083B844 /* MoodieApp2@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
