@@ -81,15 +81,16 @@ class ViewRecomendacion: UIViewController {
                                 self.lblDescripcion.text = resena
                             }
                             
-                            if let year = diccionarioPeliculas.value(forKey: "year") as? String {
-                                self.lblAno.text = year
+                            if let ano = diccionarioPeliculas.value(forKey: "year") as? Int {
+                                self.lblAno.text = String(ano)
+                            }
+                          
+                            
+                            if let cali = diccionarioPeliculas.value(forKey: "rating") as? Float {
+                                self.lblCalificacion.text = String(cali)
                             }
                             
-                            if let cali = diccionarioPeliculas.value(forKey: "rating") as? String {
-                                self.lblCalificacion.text = cali
-                            }
-                            
-                            if let tiempo = diccionarioPeliculas.value(forKey: "runtime") as? String {
+                            if let tiempo = diccionarioPeliculas.value(forKey: "runtime") as? Int {
                                 self.lblDuracion.text = "\(tiempo) min"
                             }
                             
